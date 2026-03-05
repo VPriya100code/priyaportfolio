@@ -21,7 +21,7 @@ export default function ContactSection() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          access_key: "c0e41834-c989-4fc5-9b8d-f0d747c63a81", 
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY, 
           name: formData.name,
           email: formData.email,
           message: formData.message,
